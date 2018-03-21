@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+ul, ol{
+    list-style: none;
+}
+input, button{
+    border-style: none;
+}
+/* 兼容 IE
+html{
+    border: 1px black solid;
+    height: 100%;
+}
+body{
+    border: 1px red solid;
+    min-height: 100%;
+}
+*/
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.search{
+    display: flex;
+    position: relative;
+    height: 40px;
+}
+.search__text{
+    border: 1px #B7B8B7 solid;
+    width: 536px;
+    height: 100%;
+    padding: 0 6px;
+    font-size: 1em;
+}
+.search__text:focus{
+    outline: none;
+    border-color: #3287FF;
+}
+.search__button{
+    position: absolute;
+    right: 110px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+/* svg 相关不可删 */
+.icon{
+    width: 20px; 
+    height: 20px;
+    vertical-align: -0.15em;
+    fill: currentColor;
+    overflow: hidden;
+ }
+.search__button > svg{
+    fill: #999;
+    height: 100%;
+}
+.search__button__splitline{
+    border-left: 1px #eee solid;
+    height: 1em;
+    margin: 0 10px;
+}
+.search__baidu{
+    width: 102px;
+    height: 100%;
+    background: #3287FF;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+}
+.search__suggestion{
+    border: 1px #CBCCCB solid;
+    position: absolute;
+    left: 0;
+    top: 39px;
+    width: 536px;
+    display: none;
+}
+.search__suggestion.active{
+    display: block;
+}
+.search__suggestion > li{
+    font-size: 14px;
+    color: #000000;
+    line-height: 22px;
+    padding-left: 6px;
+}

@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>百度一下</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="search">
+        <input type="text" class="search__text" autocomplete="off" id="keyword">
+        <div class="search__button">
+            <svg class="icon">
+                    <use xlink:href="#icon-yuyin"></use>
+            </svg>
+            <span class="search__button__splitline"></span>
+            <svg class="icon">
+                    <use xlink:href="#icon-xiangji"></use>
+            </svg>
+        </div>
+        <button class="search__baidu">百度一下</button>
+        <ul class="search__suggestion" id="suggestion">
+                <li>选项1</li>
+                <li>选项2</li>
+                <li>选项3</li>
+        </ul>
+    </div>
+
+    <script src="//at.alicdn.com/t/font_599587_hs07tjbha7b3ayvi.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
